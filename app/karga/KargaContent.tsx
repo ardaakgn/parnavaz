@@ -38,7 +38,7 @@ export default function KargaContent() {
             initial={{ opacity: 0, y: 40, filter: "blur(20px)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-            className="text-[clamp(4rem,12vw,9rem)] font-light tracking-[0.12em] leading-none text-text uppercase mb-8"
+            className="text-[clamp(4rem,11vw,7rem)] font-light tracking-[0.12em] leading-none text-text uppercase mb-8"
             style={{
               fontFamily: "'Cormorant Garamond', serif",
               textShadow: "0 0 60px rgba(212, 160, 23, 0.1)",
@@ -56,7 +56,7 @@ export default function KargaContent() {
             <div className="flex items-center gap-6 mb-8">
               <div className="h-px bg-gradient-to-r from-accent/50 to-transparent w-32" />
               <span
-                className="text-accent/40 text-xs"
+                className="text-accent/40 text-lg"
                 style={{ fontFamily: "'Caveat', cursive" }}
               >
                 {magazines.length} Sayı
