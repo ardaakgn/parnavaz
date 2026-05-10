@@ -52,52 +52,59 @@ export default function HeroSection() {
             style={{ scale }}
           >
             {/* Image placeholder with atmospheric gradient */}
-            <div
-              className="absolute inset-0 vignette"
+            {/* Hero image */}
+            <img
+              src="/images/karga-hero.jpg"
+              alt="Karga"
+              className="absolute inset-0 w-full h-full object-cover object-center"
               style={{
-                background: `
-                  radial-gradient(ellipse at 30% 40%, rgba(100, 15, 15, 0.6) 0%, transparent 60%),
-                  radial-gradient(ellipse at 70% 60%, rgba(50, 8, 8, 0.4) 0%, transparent 50%),
-                  linear-gradient(160deg, #1a0500 0%, #0a0000 40%, #120308 100%)
-                `,
+                filter: "brightness(0.75) contrast(1.1) saturate(0.9)",
               }}
             />
 
-            {/* Decorative lines inside image */}
-            <svg
-              className="absolute inset-0 w-full h-full opacity-10"
-              viewBox="0 0 800 500"
-              preserveAspectRatio="xMidYMid slice"
-            >
-              <line x1="0" y1="250" x2="800" y2="250" stroke="#d4a017" strokeWidth="0.5" />
-              <line x1="400" y1="0" x2="400" y2="500" stroke="#d4a017" strokeWidth="0.5" />
-              <circle cx="400" cy="250" r="80" stroke="#d4a017" strokeWidth="0.5" fill="none" />
-              <circle cx="400" cy="250" r="160" stroke="#d4a017" strokeWidth="0.3" fill="none" />
-            </svg>
-
-            {/* Center symbol */}
-            <motion.div
-              className="absolute inset-0 flex items-center justify-center"
-              animate={{ opacity: [0.4, 0.7, 0.4] }}
-              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-            >
-              <div
-                className="w-20 h-20 border border-accent/30 flex items-center justify-center"
-                style={{ transform: "rotate(45deg)" }}
-              >
-                <div
-                  className="w-10 h-10 border border-accent/20"
-                  style={{ transform: "rotate(0deg)" }}
-                />
-              </div>
-            </motion.div>
-
-            {/* Vignette overlay */}
+            {/* Cinematic color grade overlay */}
             <div
               className="absolute inset-0"
               style={{
                 background:
-                  "radial-gradient(ellipse at center, transparent 30%, rgba(8, 0, 0, 0.8) 100%)",
+                  "linear-gradient(160deg, rgba(80,5,5,0.35) 0%, rgba(8,0,0,0.15) 50%, rgba(4,0,8,0.4) 100%)",
+                mixBlendMode: "multiply",
+              }}
+            />
+
+            {/* Vignette — kenarları karart */}
+            <div
+              className="absolute inset-0"
+              style={{
+                background:
+                  "radial-gradient(ellipse 75% 75% at center, transparent 25%, rgba(4,0,0,0.70) 70%, rgba(2,0,0,0.95) 100%)",
+              }}
+            />
+
+            {/* Alt kısım fade — typography'ye geçiş */}
+            <div
+              className="absolute bottom-0 left-0 right-0 h-1/3"
+              style={{
+                background:
+                  "linear-gradient(to bottom, transparent, rgba(8,0,0,0.95))",
+              }}
+            />
+
+            {/* Üst kısım subtle fade */}
+            <div
+              className="absolute top-0 left-0 right-0 h-1/4"
+              style={{
+                background:
+                  "linear-gradient(to top, transparent, rgba(8,0,0,0.5))",
+              }}
+            />
+
+            {/* Altın parıltı — kuşun üzerinde */}
+            <div
+              className="absolute inset-0 opacity-20"
+              style={{
+                background:
+                  "radial-gradient(ellipse 40% 50% at 48% 55%, rgba(212,160,23,0.25) 0%, transparent 70%)",
               }}
             />
 
