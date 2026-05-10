@@ -51,5 +51,15 @@ export const magazines: Magazine[] = [
     issue: "No. 04",
     theme: "ÜSTÜNSOY, YUNUS VE MÜCO",
   },
+        {
+    id: 5,
+    title: "Karga — Sayı 5",
+    description:
+      "Beşinci sayımız: sikiş ve sokuşun psikolojisi. Bedenin ve zihnin kıyılarında dolaşan imgeler.",
+    date: "10.07.2025",
+    pdf: "/pdfs/karga-sayi-5.pdf",
+    issue: "No. 05 ",
+    theme: "ÜSTÜNSOY, YUNUS VE MÜCO",
+  },
 
 ];
