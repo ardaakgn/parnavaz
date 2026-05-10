@@ -31,7 +31,7 @@ export default function Footer() {
             PARNAVAZ
           </p>
           <p className="text-text-muted text-xs tracking-[0.15em] uppercase">
-            Bağımsız Kültür
+            Bağımsız Sikiş Çizgi dergisi
           </p>
         </motion.div>
 

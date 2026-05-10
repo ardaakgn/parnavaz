@@ -170,7 +170,7 @@ export default function HeroSection() {
             className="text-accent/60 text-xs tracking-[0.4em] uppercase"
             style={{ fontFamily: "'Caveat', cursive" }}
           >
-            Bağımsız Kültür Dergisi
+            Bağımsız Sikiş Çizgi Dergisi
           </span>
           <div className="w-16 h-px bg-gradient-to-l from-transparent to-accent/50" />
         </motion.div>
@@ -183,9 +183,9 @@ export default function HeroSection() {
           className="text-text-muted text-sm md:text-base leading-relaxed text-center max-w-md font-light"
           style={{ fontFamily: "'Inter', sans-serif" }}
         >
-          Kenar boşluklarından doğan sesler. Karanlıktan süzülen imgeler.
+          Kapa çeneni ananı sikerim.
           <br />
-          Her sayı bir ritüel, her satır bir itiraf.
+          Her sayı bir sikiş, her satır bir sokuş.
         </motion.p>
 
         {/* CTA */}

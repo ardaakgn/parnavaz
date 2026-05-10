@@ -9,6 +9,7 @@ export interface Magazine {
 }
 
 export const magazines: Magazine[] = [
+
   {
     id: 1,
     title: "Karga — Sayı 1",
@@ -39,4 +40,16 @@ export const magazines: Magazine[] = [
     issue: "No. 03",
     theme: "Arkeoloji",
   },
+
+      {
+    id: 4,
+    title: "Karga — Sayı 4",
+    description:
+      "Dördüncü sayımız: sikiş ve sokuşun psikolojisi. Bedenin ve zihnin kıyılarında dolaşan imgeler.",
+    date: "10.07.2025",
+    pdf: "/pdfs/karga-sayi-4.pdf",
+    issue: "No. 04",
+    theme: "ÜSTÜNSOY, YUNUS VE MÜCO",
+  },
+
 ];

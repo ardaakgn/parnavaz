@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+// @ts-ignore
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "PARNAVAZ",
-    description: "Karga bağımsız kültür dergisi.",
+    description: "Karga bağımsız sikiş çizgi dergisi.",
     images: ["/images/og-image.jpg"],
   },
   icons: {
